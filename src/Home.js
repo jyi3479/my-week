@@ -104,6 +104,7 @@ const Button = styled.div`
   border-bottom: 20px solid transparent;
   margin: 5px;
   display: flex;
+  cursor: pointer;
 `;
 
 export default Home;

@@ -52,6 +52,7 @@ const Circle = styled.div`
   background-color: #ddd;
   margin: 5px;
   display: flex;
+  cursor: pointer;
 `;
 
 export default Star;

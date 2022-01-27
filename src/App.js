@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./Home";
 import Detail from "./Detail";
+import NotFound from "./NotFound";
 import styled from "styled-components";
 import { Route, Routes } from "react-router-dom";
 
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detail/:week_day" element={<Detail />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Container>
     </div>

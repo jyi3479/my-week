@@ -22,7 +22,7 @@ const Detail = (props) => {
       </Review>
       <BackButton
         onClick={() => {
-          navigate(-1);
+          navigate("/");
         }}
       >
         평점 남기기
@@ -70,6 +70,7 @@ const BackButton = styled.button`
   padding: 1rem;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 `;
 
 export default Detail;
