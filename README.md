@@ -1,1 +1,1 @@
-MY RATING
+My Week Review
