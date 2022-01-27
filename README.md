@@ -1,1 +1,1 @@
-My Week Review
+My Weekly Review
