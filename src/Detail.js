@@ -5,8 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 const Detail = (props) => {
+  // useParams 훅을 사용하여 url 파라미터에 접근
   const { week_day } = useParams();
-  console.log(week_day);
+  // navigate 객체에 접근하여 뒤로가기 버튼이 특정 페이지로 이동할 수 있도록 함
   let navigate = useNavigate();
 
   return (
@@ -18,6 +19,7 @@ const Detail = (props) => {
       </Title>
 
       <Review>
+        {/* 평점 입력 컴포넌트를 새로 만들어서, 평점을 클릭할 원 5개를 보여주고 클릭 및 키보드 이벤트를 관리하도록 하였음. */}
         <Star />
       </Review>
       <BackButton
@@ -54,12 +56,6 @@ const WeekBox = styled.span`
   padding: 2px;
   margin: 5px;
   color: white;
-  /* width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: orange;
-  margin: 5px;
-  display: flex; */
 `;
 
 const BackButton = styled.button`

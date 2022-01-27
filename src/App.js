@@ -11,6 +11,7 @@ function App() {
       <Container>
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* 각 페이지의 요일을 URL 파라미터로 사용하기 위해 /:week_day 사용 */}
           <Route path="/detail/:week_day" element={<Detail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
